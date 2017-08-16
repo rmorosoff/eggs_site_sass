@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("https://fonts.googleapis.com/css?family=Droid+Serif");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0; }
+
+ul {
+  padding: 0; }
+
+.masthead {
+  display: flex;
+  background-color: white;
+  flex-direction: column;
+  justify-content: center;
+  height: 125px; }
+  .masthead h1 {
+    color: pink;
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 35px;
+    margin-bottom: 10px; }
+  .masthead .subheader {
+    color: grey;
+    font-family: 'Droid Serif';
+    font-style: italic;
+    padding-left: 35px; }
+
+.eggs {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%; }
+
+.egg {
+  display: flex;
+  width: 50%;
+  height: 600px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; }
+  .egg img {
+    width: 350px;
+    height: 350px;
+    padding-top: 35px; }
+  .egg .description h2 {
+    text-align: center; }
+  .egg .description .dash {
+    text-align: center;
+    color: white; }
+  .egg .description .name {
+    font-family: 'Montserrat', sans-serif;
+    color: white; }
+  .egg .description .explanation {
+    font-style: italic;
+    color: white;
+    font-size: 1.6rem;
+    height: 12rem;
+    text-align: center; }
+
+.bg-red {
+  background-color: #ec7471; }
+
+.bg-green {
+  background-color: #93dc88; }
+
+.bg-blue {
+  background-color: #85cdf4; }
+
+.bg-purple {
+  background-color: #c097cc; }
+
+.bg-teal {
+  background-color: #2bcbc5; }
+
+.bg-salmon {
+  background-color: #f3bfb9; }
+
+.bg-yellow {
+  background-color: #e3d578; }
+
+.bg-navy {
+  background-color: #7191e4; }
+
+footer {
+  display: flex;
+  align-items: center;
+  background-color: black;
+  height: 100px; }
+  footer .credit {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 25px; }
+
+/*# sourceMappingURL=eggs.css.map */
