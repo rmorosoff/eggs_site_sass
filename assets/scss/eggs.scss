@@ -2,6 +2,14 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 @import url('https://fonts.googleapis.com/css?family=Droid+Serif');
 
+$font-stack: 'Montserrat', sans-serif;
+$primary-color: white;
+
+@mixin fix-align($align) {
+  text-align: $align;
+}
+
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -13,18 +21,18 @@ ul {
 }
 .masthead {
   display: flex;
-  background-color: white;
+  background-color: $primary-color;
   flex-direction: column;
   justify-content: center;
-  height: 125px;
+  height: 150px;
   h1 {
     color: pink;
-    font-family: 'Montserrat', sans-serif;
+    font-family: $font-stack;
     padding-left: 35px;
     margin-bottom: 10px;
   }
   .subheader {
-    color: grey;
+    color: lightgrey;
     font-family: 'Droid Serif';
     font-style: italic;
     padding-left: 35px;
@@ -40,6 +48,9 @@ ul {
 .egg {
   display: flex;
   width: 50%;
+  @media (max-width: 800px) {
+    width: 100%;
+  }
   height: 600px;
   flex-direction: column;
   align-items: center;
@@ -51,22 +62,22 @@ ul {
   }
   .description{
     h2{
-      text-align: center;
+      @include fix-align(center);
     }
     .dash {
       text-align: center;
       color: white;
     }
     .name {
-      font-family: 'Montserrat', sans-serif;
-      color: white;
+      font-family: $font-stack;
+      color: $primary-color;
     }
     .explanation {
       font-style: italic;
-      color: white;
+      color: $primary-color;
       font-size: 1.6rem;
       height: 12rem;
-      text-align: center;
+      @include fix-align(center);
     }
   }
 
@@ -81,7 +92,7 @@ footer {
   height: 100px;
   .credit {
     color: white;
-    font-family: 'Montserrat', sans-serif;
+    font-family: $font-stack;
     padding-left: 25px;
   }
 }

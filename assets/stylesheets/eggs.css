@@ -13,14 +13,14 @@ ul {
   background-color: white;
   flex-direction: column;
   justify-content: center;
-  height: 125px; }
+  height: 150px; }
   .masthead h1 {
     color: pink;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     padding-left: 35px;
     margin-bottom: 10px; }
   .masthead .subheader {
-    color: grey;
+    color: lightgrey;
     font-family: 'Droid Serif';
     font-style: italic;
     padding-left: 35px; }
@@ -37,6 +37,9 @@ ul {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start; }
+  @media (max-width: 800px) {
+    .egg {
+      width: 100%; } }
   .egg img {
     width: 350px;
     height: 350px;
@@ -47,7 +50,7 @@ ul {
     text-align: center;
     color: white; }
   .egg .description .name {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     color: white; }
   .egg .description .explanation {
     font-style: italic;
@@ -87,7 +90,7 @@ footer {
   height: 100px; }
   footer .credit {
     color: white;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     padding-left: 25px; }
 
 /*# sourceMappingURL=eggs.css.map */
