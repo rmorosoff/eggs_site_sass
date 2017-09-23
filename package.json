@@ -1,0 +1,28 @@
+{
+  "name": "sass_eggs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rmorosoff/eggs_site_sass.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rmorosoff/eggs_site_sass/issues"
+  },
+  "homepage": "https://github.com/rmorosoff/eggs_site_sass#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-htmlhint": "^0.3.1"
+  },
+  "dependencies": {
+    "gulp-path": "^3.0.3",
+    "gulp-util": "^3.0.8",
+    "gulp-w3c-css": "^1.0.1"
+  }
+}
